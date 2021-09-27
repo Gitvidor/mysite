@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action='test_html' method = 'post'>
+    <input type = 'text' name = 'x' value = '{{ x }}'>
+    <select name = 'op'>
+        <option value = 'add' > + </option>
+        <option value = 'sub' > - </option>
+        <option value = 'mul' > * </option>
+        <option value = 'div' > / </option>
+    </select>
+    <input type = 'text' name = 'y' value = '{{ y }}'> = <span> {{ res }} </span>
+    <div>
+        <input type = 'submit' value ='开始计算'>
+    </div>
+</form>
+
+<a href ="{% url 'tr' %}"> url反向解析</a>
+<a href ='test_url_result'>链接</a>
+<!--<form method="POST" action="execpack_action">-->
+<!--    <table border="1" >-->
+<!--        <tr>-->
+<!--            <td class="title">IP地址</td>-->
+<!--            <td><input type="text" name="ip" placeholder="请输入环境IP"></td>-->
+<!--        </tr>-->
+
+<!--        <tr>-->
+<!--            <td colspan="2" align="center"><button type="submit">执行脚本</button></td>-->
+<!--            <td></td>-->
+<!--        </tr>-->
+<!--    </table>-->
+<!--</form>-->
+
+
+</body>
+</html>

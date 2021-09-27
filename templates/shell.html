@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SHELL</title>
+</head>
+<body>
+<form action='shell' method = 'post'>
+    <h4>IP: <input type = 'text' name = 'Hostip' value = '{{ Hostip }}'></h4>
+    <h4>CMD: <input type = 'text' name = 'cmd' value = '{{ cmd }}'> </h4>
+        <input type = 'submit' value ='执行命令'>
+    </div>
+</form>
+
+<h4>OUTPUT:</h4>
+{% for line in outlist %}
+     {{ line }} <br>
+{% empty %}
+{% endfor %}
+</body>
+</html>
